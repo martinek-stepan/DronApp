@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <Button
+        android:id="@+id/backFromAction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Back"/>
+
+    <Button
+        android:id="@+id/removeAction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Remove action"/>
+
+    <TextView
+        android:id="@+id/actionTypeTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="Action type"/>
+    <Spinner
+        android:id="@+id/actionType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/waypoints_actions"/>
+
+    <TextView
+        android:id="@+id/actionInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="Action info"/>
+
+    <TextView
+        android:id="@+id/actionValueTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="Value: error"/>
+
+    <SeekBar
+        android:id="@+id/actionValue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+</LinearLayout>

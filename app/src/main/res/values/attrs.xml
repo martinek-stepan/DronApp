@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+<resources>
+    <declare-styleable name="IconInfoView">
+        <attr name="textType" format="boolean" />
+        <attr name="percentage" format="integer" />
+        <attr name="drawableId" format="integer" />
+        <attr name="yellowThreshold" format="integer" />
+        <attr name="redThreshold" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="FpsView">
+        <attr name="cropped" format="boolean" />
+    </declare-styleable>
+
+    <!-- example app stuff -->
+    <declare-styleable name="set">
+        <attr name="list_item_name" format="string"/>
+        <attr name="sub_Layout" format="reference"/>
+        <attr name="view_name" format="string"/>
+        <attr name="component_name" format="string"/>
+    </declare-styleable>
+</resources>

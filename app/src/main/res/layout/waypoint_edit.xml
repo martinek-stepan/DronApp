@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <Button
+        android:id="@+id/backFromWaypoint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Back"/>
+
+    <TextView
+        android:id="@+id/waypointInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="Waypoint info"/>
+
+    <Button
+        android:id="@+id/removeWaypoint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Remove waypoint"/>
+
+    <Button
+        android:id="@+id/addAction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add action"/>
+
+    <TextView
+        android:id="@+id/waypointAltTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="Altitude: 30m"/>
+
+    <SeekBar
+        android:id="@+id/waypointAltitude"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="100"
+        />
+
+    <ListView
+        android:id="@+id/actionsList"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+</LinearLayout>

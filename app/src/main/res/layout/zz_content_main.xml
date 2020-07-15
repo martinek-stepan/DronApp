@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dron.app.example.common.MainContent xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+                                         android:layout_height="match_parent"
+                                         android:orientation="vertical"
+                                         android:clickable="true">
+
+    <TextView
+        android:id="@+id/text_connection_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="Status: No Product Connected"
+        android:textColor="@android:color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="@+id/text_product_info"
+        app:layout_constraintRight_toRightOf="@+id/text_product_info"
+        android:layout_marginBottom="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/text_product_info" />
+
+    <TextView
+        android:id="@+id/text_product_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/product_information"
+        android:textColor="@android:color/black"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/text_model_available"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/guideline2"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <TextView
+        android:id="@+id/text_model_available"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="@string/model_not_available"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_product_info"
+        app:layout_constraintLeft_toLeftOf="@+id/text_product_info"
+        app:layout_constraintRight_toRightOf="@+id/text_product_info"
+        android:layout_marginTop="24dp"
+        app:layout_constraintHorizontal_bias="0.0" />
+
+
+    <Button
+        android:id="@+id/btn_bluetooth"
+        android:layout_width="150dp"
+        android:layout_height="55dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/zz_round_btn"
+        android:text="Bluetooth"
+        android:textAllCaps="false"
+        android:textColor="@color/zz_common_text_color"
+        android:textSize="15dp"
+        android:visibility="invisible"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed"
+        android:layout_marginEnd="8dp" />
+
+    <Button
+        android:id="@+id/btn_open"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/btn_bluetooth"
+        android:background="@drawable/zz_round_btn"
+        android:textAllCaps="false"
+        android:text="Open"
+        android:textColor="@color/zz_common_text_color"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="@+id/guideline2"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Dronapp2017 / SDK 3.5.1"
+        android:textSize="15dp"
+        app:layout_constraintLeft_toLeftOf="@+id/text_product_info"
+        app:layout_constraintRight_toRightOf="@+id/text_product_info"
+        app:layout_constraintHorizontal_bias="0.4"
+        android:layout_marginTop="48dp"
+        app:layout_constraintTop_toBottomOf="@+id/text_model_available" />
+
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guideline2"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="296dp" />
+
+</com.dron.app.example.common.MainContent>

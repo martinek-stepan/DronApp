@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item name="battery_popup_id" type="id"/>
+    <item name="controller_signal_popup_id" type="id"/>
+    <item name="controller_battery_popup_id" type="id"/>
+    <item name="video_signal_popup_id" type="id"/>
+    <item name="drone_signal_popup_id" type="id"/>
+    <item name="settings_popup_id" type="id"/>
+    <item name="smart_functions_popup_id" type="id"/>
+
+    <item name="toolbar_parent" type="id"/>
+
+</resources>

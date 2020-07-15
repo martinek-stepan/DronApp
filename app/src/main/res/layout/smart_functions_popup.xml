@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/smartFunctions"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="8dp"
+    android:background="@color/half_transparent"
+    android:focusableInTouchMode="true">
+
+    <ToggleButton
+        android:id="@+id/selfieFollow"
+        android:layout_width="wrap_content"
+        android:layout_height="?android:attr/listPreferredItemHeightSmall"
+        android:checked="false"
+        android:text="Selfie"
+        android:textOff="Selfie"
+        android:textOn="Selfie" />
+    <Button
+        android:id="@+id/reset_gimbal"
+        android:layout_width="wrap_content"
+        android:layout_height="?android:attr/listPreferredItemHeightSmall"
+        android:checked="false"
+        android:text="Reset Gimbal" />
+
+    <ImageButton
+        android:id="@+id/autoTakeoff"
+        android:layout_width="wrap_content"
+        android:layout_height="?android:attr/listPreferredItemHeightSmall"
+        android:checked="false"
+        android:text="Takeoff"
+        android:tint="@color/button_tint"
+        android:src="@drawable/ic_takeoff"/>
+    <ImageButton
+        android:id="@+id/autoLand"
+        android:layout_width="wrap_content"
+        android:layout_height="?android:attr/listPreferredItemHeightSmall"
+        android:checked="false"
+        android:visibility="gone"
+        android:text="Land"
+        android:tint="@color/button_tint"
+        android:src="@drawable/ic_land"/>
+
+</LinearLayout>

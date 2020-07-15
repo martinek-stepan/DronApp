@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <Button
+        android:id="@+id/backToMissions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Back"/>
+
+    <TextView
+        android:id="@+id/headingModeTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="Heading mode:"/>
+
+    <Spinner
+        android:id="@+id/headingMode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/waypoints_heading_mode"/>
+
+    <TextView
+        android:id="@+id/flightModeTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="Flight mode:"/>
+
+    <Spinner
+        android:id="@+id/flightMode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/waypoints_flight_modes"/>
+
+    <TextView
+        android:id="@+id/finnishActionTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="Finnish action:"/>
+
+    <Spinner
+        android:id="@+id/finnishAction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/waypoints_finnish_action"/>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/contollButtons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/finnishAction">
+
+        <Button
+            android:id="@+id/addWaypoint"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/wpGL1"
+            android:text="Add waypoint"/>
+
+        <android.support.constraint.Guideline
+            android:id="@+id/wpGL1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.25"/>
+
+
+        <Button
+            android:id="@+id/removeAllWaypoints"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@+id/wpGL1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/wpGL2"
+            android:text="Remove all"/>
+
+        <android.support.constraint.Guideline
+            android:id="@+id/wpGL2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.5"/>
+
+        <Button
+            android:id="@+id/prepare"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@+id/wpGL2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:text="Prepare"/>
+
+    </android.support.constraint.ConstraintLayout>
+
+
+    <TextView
+        android:id="@+id/waypointListTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="Waypoints:"/>
+
+    <ListView
+        android:id="@+id/waypointList"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        />
+
+
+</LinearLayout>

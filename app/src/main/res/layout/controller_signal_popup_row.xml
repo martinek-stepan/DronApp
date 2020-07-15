@@ -1,0 +1,22 @@
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent">
+    <TextView
+        android:id="@+id/antenna_name"
+        android:textStyle="bold"/>
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+    <TextView
+        android:id="@+id/antenna_power"
+        android:gravity="center"
+        android:textStyle="normal"/>
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+    <TextView
+        android:id="@+id/antenna_percent"
+        android:gravity="right"
+        android:textStyle="normal"/>
+</TableRow>
